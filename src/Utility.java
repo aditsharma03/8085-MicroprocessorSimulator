@@ -42,10 +42,25 @@ public class Utility {
     public static String addition(String a, String b) {
         int len1 = a.length(), len2 = b.length();
         String ans = "";
-        for( int i=len1, j=len2; i>=0 && j>=0; i--, j-- ){
-            char digit1 = a.charAt(i), digit2 = b.charAt(b);
+
+        int i=len1-1, j=len2-1;
+        while( i>=0 && j>=0 ){
+
+            char digit1 = a.charAt(i), digit2 = b.charAt(j);
 
             ans = intToHex( hexToInt(""+digit1)+ hexToInt(""+digit2) )+ ans;
+
+            i--;
+            j--;
         }
+
+        return ans;
+    }
+
+    public static String subtraction(String a, String b) {
+
+        String ans = intToHex( hexToInt(a) - hexToInt(b) );
+
+        return ans;
     }
 }

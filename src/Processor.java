@@ -2,7 +2,7 @@ import java.util.NoSuchElementException;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Processor {
+public class    Processor {
     RegisterSet _reg;
     Memory _mem;
 

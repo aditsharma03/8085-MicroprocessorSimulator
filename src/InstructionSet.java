@@ -195,11 +195,130 @@ public class InstructionSet {
             case "ADD A" -> {
                 String a = _reg.get_A();
                 String b = _reg.get_A();
-                System.out.println("\n"+a+"\n");
+
                 String sum = Utility.addition( a, b );
 
                 _reg.set_A( sum );
             }
+            case "ADD B" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_B();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "ADD C" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_C();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "ADD D" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_D();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "ADD E" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_E();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "ADD H" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_H();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "ADD L" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_L();
+
+                String sum = Utility.addition( a, b );
+
+                _reg.set_A( sum );
+            }
+
+            case "ADI" -> {
+                String a = _reg.get_A();
+                String b = _mem.getMemory( address+1);
+
+                String sum = Utility.addition( a, b );
+                _reg.set_A( sum );
+            }
+
+
+
+
+
+            case "SUB A" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_A();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB B" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_B();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB C" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_C();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB D" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_D();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB E" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_E();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB H" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_H();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+            case "SUB L" -> {
+                String a = _reg.get_A();
+                String b = _reg.get_L();
+
+                String sum = Utility.subtraction( a, b );
+
+                _reg.set_A( sum );
+            }
+
+
 
 
 
